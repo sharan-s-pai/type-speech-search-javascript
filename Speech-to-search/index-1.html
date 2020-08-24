@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>speech-text</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="text-white" style="background-color: #141414;">
+    <div class="container">
+      <h1
+        class="mb-4 text-center display-3 bg-secondary p-3"
+        style="margin-top: 12px;"
+      >
+        Speech To Text
+      </h1>
+      <div class="clearfix">
+        <a id="back" class="float-right" style="cursor: pointer;"
+          >Back To Home-Page</a
+        >
+      </div>
+      <div id="message" class="text-center mb-4"></div>
+      <button id="start" class="btn btn-secondary mr-3">Start Speaking</button>
+      <button id="stop" class="btn btn-secondary ml-3">Stop Listening</button>
+      <div
+        class="text-center bg-white p-5"
+        style="margin-top: 100px; color: #141414; border-radius: 0.24rem;"
+        id="output"
+      ></div>
+    </div>
+  </body>
+  <script src="main-1.js"></script>
+</html>

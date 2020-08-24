@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <title>Type And Speak</title>
+  </head>
+  <body class="text-white" style="background-color: #141414;" id="body">
+    <div class="container text-center">
+      <div>
+        <h1 class="display-1 mb-5">Text-Speech</h1>
+      </div>
+      <div class="clearfix">
+      <a id="back" class="float-right" style="cursor: pointer;">Back To Home-Page</a>
+      </div>
+      <div
+        class="m-3 p-3"
+        style="border-radius: 0.25rem; background-color: #181818;"
+        id="message"
+      ></div>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <form>
+            <div class="form-group">
+              <textarea
+                name=""
+                id="text-input"
+                class="form-control form-control-lg mb-5"
+                placeholder="Enter the text here"
+              ></textarea>
+              <div class="form-group">
+                <select id="voice-select" class="form-control mb-5"></select>
+                <label for="pitch" class="float-left">Pitch</label>
+                <div id="pitch-value" class="badge badge-primary float-right">
+                  1
+                </div>
+                <input
+                  type="range"
+                  value="1"
+                  min="0"
+                  max="2"
+                  step="0.1"
+                  class="custom-range"
+                  id="pitch"
+                />
+              </div>
+              <button class="btn btn-block btn-secondary btn-lg mt-4">
+                Speak
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
